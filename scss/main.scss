@@ -5,6 +5,10 @@ $carousel-transition: transform 10s ease, opacity .2s ease-out;
 
 //Botstrap//
 @import "../bootstrap-5.0.0/bootstrap-5.0.0/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruthie&display=swap');
 
 body{
     font-family: 'poppins' sans-serif;
@@ -19,9 +23,13 @@ header{
 
 
 .website-title {
-    font-family: 'Shadows Into Light', sans-serif;
+    /*font-family: 'Fuggles', cursive;*/
+    /*font-family: 'Sacramento', cursive;*/
+    /*font-family: 'Text Me One', sans-serif;*/
+    font-family: 'Ruthie', cursive;
     font-size: 50px;
     text-decoration: none;
+    font-weight: 600;
 }
 
 #titulo:hover{
@@ -33,6 +41,7 @@ header{
 
 
 a {
+    font-family: 'Text Me One', sans-serif;
     color: $primary;
 
     &:hover {
@@ -123,6 +132,7 @@ p {
         object-fit: cover;
     }
     h4{
+        font-family: 'Text Me One', sans-serif;
         font-size: 18px;
 
         &::after{
@@ -135,9 +145,11 @@ p {
         }
     }
     p{
+        font-family: 'Text Me One', sans-serif;
         font-size: 14px;
     }
     .post-meta{
+        font-family: 'Text Me One', sans-serif;
         font-size: 12px;
     }
 }
@@ -151,4 +163,10 @@ p {
 i{
     width: 20px;
     height: 20px;
+}
+h4{
+    font-family: 'Text Me One', sans-serif;
+}
+h1{
+    font-family: 'Text Me One', sans-serif;
 }

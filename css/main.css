@@ -5,6 +5,10 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ruthie&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11980,9 +11984,13 @@ header {
 }
 
 .website-title {
-  font-family: "Shadows Into Light", sans-serif;
+  /*font-family: 'Fuggles', cursive;*/
+  /*font-family: 'Sacramento', cursive;*/
+  /*font-family: 'Text Me One', sans-serif;*/
+  font-family: "Ruthie", cursive;
   font-size: 50px;
   text-decoration: none;
+  font-weight: 600;
 }
 
 #titulo:hover {
@@ -11994,6 +12002,7 @@ header {
 }
 
 a {
+  font-family: "Text Me One", sans-serif;
   color: #806a41;
 }
 a:hover {
@@ -12071,6 +12080,7 @@ p:last-child {
      object-fit: cover;
 }
 .post h4, .post .h4 {
+  font-family: "Text Me One", sans-serif;
   font-size: 18px;
 }
 .post h4::after, .post .h4::after {
@@ -12082,9 +12092,11 @@ p:last-child {
   margin-top: 10px;
 }
 .post p {
+  font-family: "Text Me One", sans-serif;
   font-size: 14px;
 }
 .post .post-meta {
+  font-family: "Text Me One", sans-serif;
   font-size: 12px;
 }
 
@@ -12104,4 +12116,12 @@ p:last-child {
 i {
   width: 20px;
   height: 20px;
+}
+
+h4, .h4 {
+  font-family: "Text Me One", sans-serif;
+}
+
+h1, .h1 {
+  font-family: "Text Me One", sans-serif;
 }
