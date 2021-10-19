@@ -20,121 +20,174 @@
 <body>
 
     <div class="container">
-        <header>
 
-            <div class="container">
+        <header class="container">
+
+
+            <div
+                class="row justify-content-lg-between justify-content-center align-items-center mb-5 py-3 d-none d-md-flex">
     
-                <div class="row justify-content-lg-around justify-content-center py-3 align-items-center mb-5">
-
-                    <div class="col col-auto order-2 order-lg-1">
-
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link active">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="damas.html" class="nav-link">Damas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="unisex.html" class="nav-link">Unisex</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="sport.html" class="nav-link">Sport</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-12 col-lg text-center col-auto order-1 order-lg-2">
-                        <h1><a class="text-primary website-title" href="contacto.html">Sele-Style</a></h1>
-                    </div>
-
-                    <div class="col col-auto order-3 order-lg-3">
-
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="texanas.html" class="nav-link">Texanas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="borcegos.html" class="nav-link">Borcégos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="jeans.html" class="nav-link">Jeans</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contacto.html" class="nav-link">Contáctanos</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col col-auto order-2 order-lg-1">
+    
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="damas.html" class="nav-link">Damas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="unisex.html" class="nav-link">Unisex</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sport.html" class="nav-link">Sport</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ninos.html" class="nav-link">Niños</a>
+                        </li>
+                    </ul>
                 </div>
     
+                <div class="col-12 col-lg text-center col-auto order-1 order-lg-2">
+                    <h1 id="titulo"><a class="text-primary website-title" href="contacto.html">Sele-Style</a></h1>
+                </div>
+    
+                <div class="col col-auto order-3 order-lg-3">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="texanas.html" class="nav-link">Texanas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="borcegos.html" class="nav-link">Borcégos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="jeans.html" class="nav-link">Jeans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+    
+    
+    
             </div>
+    
+    
+    
+    
+    
+    
+    
+    
     
         </header>
-
-        <section id="carousel" class="row main-carousel">
-
-            <div class=" d-none d-md-flex col-4 d-flex w-25 justify-content-center align-items-center">
-
-                <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
-
-
-                    <div class="carousel-inner ">
-
-                        <div class="carousel-item carousel-transition active">
-
-                            <img class="w-75" src="./img/48 - Ecocuero negro (1).jpeg" alt="">
-
-                        </div>
-
-                        <div class="carousel-item carousel-transition">
-
-                            <img class="w-100" src="./img/309 - Ecocuero negro 3.png" alt="">
-
-                        </div>
-
-                        <div class="carousel-item carousel-transition">
-
-                           <img class="w-100" src="./img/390 - Ecocuero blanco.jpg" alt="">
-
-                        </div>
-
-                    </div>
-
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-
+    
+        <!--Esto es menu hamburguesa-->
+    
+        <div class="pos-f-t d-md-none mb-md-5" id="nav-movil">
+    
+            <div class="collapse" id="navbarToggleExternalContent">
+    
+                <div class="bg-dark p-4">
+    
+                    <ul class="burger-links">
+    
+                        <li class=" nav-item">
+                            <a href="index.html" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a href="damas.html" class="nav-link">Damas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="borcegos.html" class="nav-link">Borcegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="jeans.html" class="nav-link">Jeans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ninos.html" class="nav-link">Niños</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sport.html" class="nav-link">Sport</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="texanas.html" class="nav-link">Texanas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="unisex.html" class="nav-link">Unisex</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contáctanos</a>
+                        </li>
+    
+                    </ul>
+    
                 </div>
             </div>
+    
+            <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="text-end col-auto">
+                    <div class="col-12 col-lg text-center col-auto order-1 order-lg-2">
+                        <h1 id="titulo"><a class="text-primary website-title" href="contacto.html">Sele-Style</a></h1>
+                    </div>
+                </div>
+            </nav>
+    
+        </div>
 
-            <div class="col-12 col-md-8">
-                <div class="row"><h1>Contacto</h1></div>
-                <br>
-                <div class="roq"><h4 class="text-dark"><span class="text-primary">Dirección: </span> Carola Lorenzini 4738, Gonzalez Catán, La Matanza.</h4></div>
-                <br>
-                <div class="row"><h4 class="text-dark"><span class="text-primary">Celular: </span>+54 9 11 2651-7409 / +54 9 11 2776-4823</h4></div>
-                <br>
-                <div class="row"><h4 class="text-dark"><span class="text-primary">E-mail: </span>calzados.selenabrol@gmail.com</h4></div>
-                <br>
-            </div>
-        </section>
-    
-        
-    
     </div>
 
-    <div class="section contact bg-dark mt-5">
+
+
+    <div class="contact d-flex justify-content-center align-items-center">
+
+
+        <div class="row">
+
+            <div id="cajamodelo" class="d-sm-none d-md-block col">
+
+                <img id="modelo" src="./img/48 - Ecocuero negro (1).jpeg" alt="modelo">
+
+            </div>
+
+            
+
+
+            <div id="contacto" class="col">
+
+
+                <h1>Contacto</h1>
+
+                <h4 class="text-dark"><span class="text-primary">Dirección: </span> Carola Lorenzini 4738, Gonzalez
+                    Catán, La Matanza.</h4>
+
+                <h4 class="text-dark"><span class="text-primary">Celular: </span>+54 9 11 2651-7409 / +54 9 11 2776-4823
+                </h4>
+
+                <h4 class="text-dark"><span class="text-primary">E-mail: </span>calzados.selenabrol@gmail.com</h4>
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+
+    <div class="section contact bg-dark mt-5 mb-0">
         <div class="container-fluid">
             <div class="row py-5 justify-content-center align-items-center">
                 <div class="col col-auto mb-md-0">
@@ -190,31 +243,31 @@
         </div>
     </div>
 
-   
-
-    
 
 
 
 
 
-<script src="js/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
-    integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
-    crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
-    async></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-</script>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
 
 </body>
