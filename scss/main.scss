@@ -45,13 +45,20 @@ header {
 }
 
 #nav-movil{
-    margin: 0;
+    margin-bottom: 2rem;
     padding: 0;
     width: 100%;
     height: auto;
     display: block;
     top: 0;
     left: 0;
+
+    #titulo{
+        a{
+            text-align: center;
+            font-size: 50px;
+        }
+    }
 }
 
 .sectioncard{
@@ -349,6 +356,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 2rem;
 }
 
 
@@ -383,9 +391,15 @@ h1 {
 
 @media (max-width: 575px) {
 
-    #nav-movil{
+    .featured-post{
         width: 100%;
         margin: 0;
+        padding: 0;
+    }
+
+    #nav-movil{
+        width: 100%;
+        margin-bottom: 1rem;
         padding: 0;
     }
 
