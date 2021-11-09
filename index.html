@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -145,56 +146,61 @@
 
     <!--CONTENIDO-->
 
-    <section class="main">
+    <div class="container mt-3">
 
-        <div class="container-fluid">
+        <section class="main ">
 
-            <section id="carousel" class="row main-carousel">
-
-                <div class="col">
-
-                    <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade"
-                        data-bs-ride="carousel">
-
-
-                        <div class="carousel-inner">
-
-                            <div class="carousel-item carousel-transition active">
-
-                                <video src="videos/sale1.mp4" style="height:100%;" class="d-block w-100" alt="video1"
-                                    autoplay muted loop></video>
-
+            <div class="container-fluid">
+    
+                <section id="carousel" class="row main-carousel">
+    
+                    <div class="col">
+    
+                        <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade"
+                            data-bs-ride="carousel">
+    
+                            <div class="carousel-inner">
+    
+                                <div class="carousel-item carousel-transition active  d-flex justify-content-center align-items-center">
+    
+                                    <video src="videos/sale1.mp4" class="d-block w-100" alt="video1"
+                                        autoplay muted loop></video>
+    
+                                </div>
+    
+                                <div class="carousel-item carousel-transition  d-flex justify-content-center align-items-center">
+    
+                                    <video src="videos/sale2.mp4"  class="d-block w-100" alt="video2"
+                                        autoplay muted loop></video>
+    
+                                </div>
+    
                             </div>
-
-                            <div class="carousel-item carousel-transition">
-
-                                <video src="videos/sale2.mp4" style="height:100%;" class="d-block w-100" alt="video2"
-                                    autoplay muted loop></video>
-
-                            </div>
-
+    
+    
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+    
+    
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+    
+    
                         </div>
-
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-
-
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-
-
                     </div>
-                </div>
-            </section>
-        </div>
-    </section>
+                </section>
+            </div>
+        </section>
+
+    </div>
+
+    
 
     <!--NEW SECTION-->
 
@@ -202,10 +208,10 @@
         <div class="container-fluid">
             <div class="row py-5 justify-content-center align-items-center">
                 <div class="col col-auto mb-md-0">
-                    <p class="text-white mb-0">Nueva Sección Niños</p>
+                    <p class="text-white mb-0">Nueva Sección Jeans</p>
                 </div>
                 <div class="col col-auto">
-                    <a href="ninos.html" class="btn btn-primary">Ingresa Ya!</a>
+                    <a href="jeans.html" class="btn btn-primary">Ingresa Ya!</a>
                 </div>
             </div>
         </div>
@@ -213,135 +219,138 @@
 
     <!--LATEST NEWS-->
 
-    <div class="container-fluid">
+    <div class="container mt-3">
 
-        <section id="news" class="row latest-news">
+        <div class="container-fluid">
 
-            <div class="col-lg mb-md-3 mb-lg-0 p-md-3 m-md-3 ">
-
-                <div class="featured-post h-100">
-
-                    <div id="featuredPostCarousel" class="carousel carousel-dark slide carousel-fade h-100">
-
-                        <div class="carousel-inner h-100">
-
-                            <div class="carousel-item active h-100">
-
-                                <div class="featured-post-inner h-100 d-flex align-items-end featured-post-1">
-
-                                    <div class="featured-post-info w-100">
-
-                                        <h4>Nueva Sección "Jeans"</h4>
-
-                                        <p>Cuidamos el bolsillo de nuestros clientes</p>
-
-                                        <p class="post-meta d-flex justify-content-between">
-                                            <span>Brandy Jeans</span>
-                                            <span>Agosto 2021</span>
-                                        </p>
-
+            <section id="news" class="row latest-news">
+    
+                <div id="noticias" class="col-lg mb-md-3 mb-lg-0 p-md-3 m-md-3 ">
+    
+                    <div class="featured-post h-100">
+    
+                        <div id="featuredPostCarousel" class="carousel carousel-dark slide carousel-fade h-100">
+    
+                            <div class="carousel-inner h-100">
+    
+                                <div class="carousel-item active h-100">
+    
+                                    <div class="featured-post-inner h-100 d-flex align-items-end featured-post-1">
+    
+                                        <div class="featured-post-info w-100">
+    
+                                            <h4>Nueva Sección "Jeans"</h4>
+    
+                                            <p>Cuidamos el bolsillo de nuestros clientes</p>
+    
+                                            <p class="post-meta d-flex justify-content-between">
+                                                <span>Brandy Jeans</span>
+                                                <span>Agosto 2021</span>
+                                            </p>
+    
+                                        </div>
+    
                                     </div>
-
+    
                                 </div>
-
-                            </div>
-
-                            <div class="carousel-item h-100">
-
-                                <div class="featured-post-inner h-100 d-flex align-items-end featured-post-2">
-
-                                    <div class="featured-post-info w-100">
-
-                                        <h4>Jeans premium</h4>
-
-                                        <p>Diseños hermosos</p>
-
-                                        <p class="post-meta d-flex justify-content-between">
-                                            <span>Brandy Jeans</span>
-                                            <span>Agosto - 2021</span>
-                                        </p>
-
+    
+                                <div class="carousel-item h-100">
+    
+                                    <div class="featured-post-inner h-100 d-flex align-items-end featured-post-2">
+    
+                                        <div class="featured-post-info w-100">
+    
+                                            <h4>Jeans premium</h4>
+    
+                                            <p>Diseños hermosos</p>
+    
+                                            <p class="post-meta d-flex justify-content-between">
+                                                <span>Brandy Jeans</span>
+                                                <span>Agosto - 2021</span>
+                                            </p>
+    
+                                        </div>
+    
                                     </div>
-
+    
                                 </div>
-
+    
                             </div>
-
+    
+                            <button class="carousel-control-prev" type="button" data-bs-target="#featuredPostCarousel"
+                                data-bs-slide="prev">
+    
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+    
+                            </button>
+    
+                            <button class="carousel-control-next" type="button" data-bs-target="#featuredPostCarousel"
+                                data-bs-slide="next">
+    
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+    
+                            </button>
+    
                         </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#featuredPostCarousel"
-                            data-bs-slide="prev">
-
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-
-                        </button>
-
-                        <button class="carousel-control-next" type="button" data-bs-target="#featuredPostCarousel"
-                            data-bs-slide="next">
-
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-
-                        </button>
-
                     </div>
+    
                 </div>
-
-            </div>
-
-            <div class="col-lg d-none d-md-block mb-3 mb-lg-0 p-3 m-3 ">
-
-                <div class="row post mb-3">
-                    <div class="col-sm-4">
-                        <img class="img-fluid" src="img/art-012-1.png" alt="noticia">
+    
+                <div id="noticias" class="col-lg d-none d-md-block mb-3 mb-lg-0 p-3 m-3 ">
+    
+                    <div class="row post mb-3">
+                        <div class="col-sm-4">
+                            <img class="img-fluid" src="img/art-012-1.png" alt="noticia">
+                        </div>
+                        <div class="col-sm-8">
+                            <h4>Los mejores profesionales</h4>
+                            <p>Altamente capacitados y experimentados.</p>
+                            <p class="post-meta d-flex justify-content-between">
+                                <span>Por Selana Brol</span>
+                                <span>24 de Agosto - 2021</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-sm-8">
-                        <h4>Los mejores profesionales</h4>
-                        <p>Altamente capacitados y experimentados.</p>
-                        <p class="post-meta d-flex justify-content-between">
-                            <span>Por Selana Brol</span>
-                            <span>24 de Agosto - 2021</span>
-                        </p>
+    
+                    <div class="row post mb-3">
+                        <div class="col-sm-4">
+                            <img class="img-fluid" src="img/art-024.png" alt="noticia">
+                        </div>
+                        <div class="col-sm-8">
+                            <h4>Hermosos diseños.</h4>
+                            <p>Totalmente Ecológicos.</p>
+                            <p class="post-meta d-flex justify-content-between">
+                                <span>Por Selena Brol</span>
+                                <span>24 de Agosto - 2021</span>
+                            </p>
+                        </div>
                     </div>
+    
+                    <div class="row post">
+                        <div class="col-sm-4">
+                            <img class="img-fluid" src="img/art-200-1.png" alt="calzado">
+                        </div>
+                        <div class="col-sm-8">
+                            <h4>Calzados.</h4>
+                            <p>Super Económicos.</p>
+                            <p class="post-meta d-flex justify-content-between">
+                                <span>Por Selena Brol</span>
+                                <span>24 de Agosto - 2021</span>
+                            </p>
+                        </div>
+                    </div>
+    
                 </div>
-
-                <div class="row post mb-3">
-                    <div class="col-sm-4">
-                        <img class="img-fluid" src="img/art-024.png" alt="noticia">
-                    </div>
-                    <div class="col-sm-8">
-                        <h4>Hermosos diseños.</h4>
-                        <p>Totalmente Ecológicos.</p>
-                        <p class="post-meta d-flex justify-content-between">
-                            <span>Por Selena Brol</span>
-                            <span>24 de Agosto - 2021</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row post">
-                    <div class="col-sm-4">
-                        <img class="img-fluid" src="img/art-200-1.png" alt="calzado">
-                    </div>
-                    <div class="col-sm-8">
-                        <h4>Calzados.</h4>
-                        <p>Super Económicos.</p>
-                        <p class="post-meta d-flex justify-content-between">
-                            <span>Por Selena Brol</span>
-                            <span>24 de Agosto - 2021</span>
-                        </p>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-
-        </section>
+    
+            </section>
+    
+        </div>
 
     </div>
+
+    
 
     <!--NEW SECTION-->
 
@@ -423,6 +432,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <script src="main.js"></script>
+    <script src="code.js"></script>
 
 
 </body>

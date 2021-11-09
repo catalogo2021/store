@@ -12023,7 +12023,6 @@ textarea.form-control-lg {
 body {
   background-image: radial-gradient(circle 602px at 2.1% 5.1%, #e90078 0%, black 90.1%);
   font-weight: 300;
-  min-height: 100vh;
 }
 
 header {
@@ -12165,6 +12164,100 @@ header {
   border: 10px solid rgba(0, 0, 0, 0.25);
 }
 
+.mostrador-contenedor {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
+  -webkit-animation: mostrarImagen 1s linear;
+          animation: mostrarImagen 1s linear;
+}
+
+.mostrador__img {
+  width: 40vw;
+  height: 40vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+
+.mostrador__iconX {
+  color: #ACACAC;
+  padding: 6px 10px;
+  position: absolute;
+  z-index: 2;
+  top: 2vw;
+  right: 2vw;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  background-color: #262626;
+  border-radius: 2.5px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes mostrarImagen {
+  from {
+    -webkit-clip-path: circle(0 at 50% 50%);
+            clip-path: circle(0 at 50% 50%);
+  }
+  to {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+  }
+}
+
+@keyframes mostrarImagen {
+  from {
+    -webkit-clip-path: circle(0 at 50% 50%);
+            clip-path: circle(0 at 50% 50%);
+  }
+  to {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+  }
+}
+.close {
+  -webkit-animation: cerrarMostradorImagen 1s linear;
+          animation: cerrarMostradorImagen 1s linear;
+}
+
+@-webkit-keyframes cerrarMostradorImagen {
+  from {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+  }
+  to {
+    -webkit-clip-path: circle(0 at 50% 50%);
+            clip-path: circle(0 at 50% 50%);
+  }
+}
+
+@keyframes cerrarMostradorImagen {
+  from {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+  }
+  to {
+    -webkit-clip-path: circle(0 at 50% 50%);
+            clip-path: circle(0 at 50% 50%);
+  }
+}
 .imgBxJeans {
   position: relative;
   width: 250px;
@@ -12297,7 +12390,7 @@ p:last-child {
 }
 
 .featured-post {
-  min-height: 400px;
+  min-height: 200px;
 }
 
 .featured-post-inner .featured-post-info {
@@ -12404,14 +12497,26 @@ h1, .h1 {
 @media (max-width: 575px) {
   .featured-post {
     width: 100%;
+    height: 100%;
+    min-height: 500px;
     margin: 0;
     padding: 0;
   }
 
   #nav-movil {
     width: 100%;
+    height: 100%;
     margin-bottom: 1rem;
     padding: 0;
+  }
+
+  .carousel-inner {
+    min-height: 400px;
+  }
+  .carousel-inner video {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
   }
 
   #contactopadre {
