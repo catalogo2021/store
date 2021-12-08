@@ -47,14 +47,34 @@ header {
 }
 
 #nav-movil {
+    
     margin-bottom: 2rem;
     padding: 0;
     width: 100%;
     height: auto;
-    display: block;
     top: 0;
     left: 0;
+    
 
+    ul{
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    li{
+        
+        line-height: 30px;
+        margin: 1rem 0;
+        transition: all .5s;
+    }
+
+    li a{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
     #titulo {
         a {
             text-align: center;
@@ -62,7 +82,10 @@ header {
         }
     }
 }
-
+#nav-movil li a.active, #nav-movil li a:hover{
+    color: rgb(248, 8, 8);
+    transition: .3s;
+}
 
 .sectioncard {
     position: relative;

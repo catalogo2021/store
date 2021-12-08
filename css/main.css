@@ -12056,13 +12056,34 @@ header {
   padding: 0;
   width: 100%;
   height: auto;
-  display: block;
   top: 0;
   left: 0;
+}
+#nav-movil ul {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+}
+#nav-movil li {
+  line-height: 30px;
+  margin: 1rem 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#nav-movil li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
 }
 #nav-movil #titulo a {
   text-align: center;
   font-size: 50px;
+}
+
+#nav-movil li a.active, #nav-movil li a:hover {
+  color: #f80808;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .sectioncard {
